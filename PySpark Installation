@@ -1,0 +1,13 @@
+PySpark Installation on windows 10
+
+1. Download PySpark: https://spark.apache.org/downloads.html
+2. Download winutils.exe: https://github.com/steveloughran/winutils/tree/master (download the version that u need)
+3. Create a folder in local disk c, i named the folder "spark-setup"
+4. Extract PySpark that downloaded at folder spark-setup
+5. Creat new folder named "hadoop" > "bin", and then move the winutils.exe to this folder
+6. Open Edit the system environment variables to make new environment
+7. Klik Environmen Variables > in User variables for OWNER klik New > fill with the path of bin of hadoop and bin of pyspark :
+  SPARK_HOME > the path of folder bin pyspark
+  HADOOP_HOME > the path of folder bin hadoop
+8. Edit the path > klik New > creat a %SPARK_HOME%\bin and %HADOOP_HOME%\bin > OK
+9. Open cmd, then run spark-shell
